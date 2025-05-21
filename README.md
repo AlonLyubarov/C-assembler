@@ -15,10 +15,8 @@ If the assembly source file is valid, the following files may be generated:
 
 .ext file – Similar to the .ent file, but for external labels defined using .extern. It includes external label names and their decimal addresses. The original source file remains unchanged.
 
-If the assembly file contains issues, there are two possible outcomes:
+If the assembly file contains issues
 
-Warning – The translation continues, but the user is notified about non-critical issues that may need attention.
-
-Error – A critical error is found, and the translation process stops. The user must fix the error before continuing.
+The program will display clear error or warning messages, specifying the type of problem and its exact location in the code. For example, it might indicate a missing operand, an undefined label, invalid syntax, or misuse of a directive. These messages are designed to help the user quickly identify and fix the problem in the source file.
 
 This project focuses solely on the assembler’s translation stage. It does not include the linker stage
